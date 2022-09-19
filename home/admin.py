@@ -3,3 +3,5 @@ from .models import *
 # Register your models here.
 admin.site.register(Contact)
 admin.site.register(Feedback)
+admin.site.register(Plan)
+admin.site.register(Service)

@@ -18,3 +18,20 @@ class Feedback(models.Model):
 
     def __str__(self):
         return self.name
+
+class Plan(models.Model):
+    economy = models.IntegerField()
+    business = models.IntegerField()
+    premium = models.IntegerField()
+    exclusive = models.IntegerField()
+
+    def __str__(self):
+        return f"{self.economy} {self.business} {self.premium} {self.exclusive}"
+
+class Service(models.Model):
+    name = models.CharField(max_length=300)
+    icon = models.CharField(max_length=300)
+    description = models.TextField()
+
+    def __str__(self):
+        return self.name
